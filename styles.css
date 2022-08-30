@@ -1,0 +1,377 @@
+.cabecalho {
+    align-items: center;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.logo{
+    align-items: left;
+    justify-items: left;
+    border-radius: 50%;
+    width: 200px;
+    background: none;
+    margin-left: 0;
+}
+
+.menu {
+
+}
+
+.menu__link {
+    color: #808080;
+    margin-right: 1.25rem;
+    text-decoration: none;
+
+}
+
+.menu__link.ativo {
+    color: #333333;
+    font-weight: bold;
+}
+
+.menu__link:hover{
+    text-decoration: underline;
+}
+
+.menu__lista{
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__item:last-child .menu__link {
+    margin-right: 0;
+}
+
+.banner{
+    background: url('../../img/camera-banner.jpg') no-repeat center / cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.banner__titulo {
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    top: 50%;
+    text-align: center ;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .banner__titulo {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner__titulo {
+        font-size: 1.5rem;
+    }
+}
+
+.quem-somos {
+    text-align: center;   
+}
+
+.quem-somos__titulo {
+    color: #8d0606;
+    font-size: 2rem;
+}
+
+.fotos {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10px;
+
+}
+
+.foto__casal {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+    align-items:center;
+    flex-direction: row;
+}
+
+.foto__casal--costas {
+    background-image: url(../../img/casal-chile.jpg);
+}
+
+.foto__casal--frente {
+    background-image: url(../../img/casal-bio.jpg);
+}
+
+.rodape{
+    background: #e6e3e3;
+    color: #686666;
+    font-size: 13px;
+    text-align: right;
+    padding: 2rem 1.5rem;
+}
+
+.galeria {
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.galeria__titulo{
+    color: #8d0606;
+    padding: 30px;
+    padding-bottom: 15px;
+    
+}
+
+.galeria__botao {
+    color: black;
+    padding: 3px;
+}
+
+.galeria__botao:hover{
+    color: #691919;
+    text-decoration: underline;
+    cursor: pointer;
+    text-transform:capitalize ;
+    transition: 1s all;
+}
+
+
+/* Pagina de Contato */
+
+form {
+    margin: 20px 0;
+    align-items: center;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 10px;
+    align-items: center;
+}
+
+fieldset {
+    width: 50%;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer ;
+}
+
+.enviar:hover{
+    background: #8d0606;
+    transform: scale(1.2);
+}
+
+/*Pagina quemSomos*/
+
+.sobre{
+    color: #8d0606;
+    padding-left: 10%;
+    text-align: left;
+    
+}
+.sobreEla{
+    text-align: left;
+    text-decoration: none;
+}
+
+.itensEla{
+    line-height: 1.5;
+    padding-left: 10px;
+
+}
+
+.itensEla::before {
+    content: "🟊"; 
+}
+
+.sobreE{
+    color: #8d0606;
+    padding-top: 20px;
+    padding-left: 10%;
+    text-align: left;
+}
+
+.sobreEle {
+    text-align: left;
+    text-decoration: none;
+}
+
+.itensEle {
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+.itensEle::before {
+    content: "🟊"; 
+}
+
+/*Pagina galeria de fotos
+
+.Pgfotos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+
+.galeria__Fotos{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+    align-items:center;
+    flex-direction: row;
+}
+
+.galeria__Fotos--1 {
+    background-image: url(../../img/1.jpg);
+}
+
+.galeria__Fotos--2 {
+    background-image: url(../../img/2.jpg);
+}
+
+.galeria__Fotos--3{
+    background-image: url(../../img/3.jpg);
+}
+
+.galeria__Fotos--4 {
+    background-image: url(../../img/4.jpg);
+}
+
+.galeria__Fotos--5 {
+    background-image: url(../../img/5.jpg);
+}
+*/
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
